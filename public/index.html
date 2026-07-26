@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fieldstall — Everyday goods, honestly priced</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="/index.html">Fieldstall<span class="dot">.</span></a>
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search products…">
+    </div>
+    <nav class="nav-links" id="auth-slot"></nav>
+    <a href="/cart.html" class="nav-cart">
+      Cart <span class="count" id="cart-count" style="display:none">0</span>
+    </a>
+  </div>
+</header>
+
+<section class="container hero">
+  <div>
+    <div class="hero-eyebrow">New stock, every week</div>
+    <h1>Goods worth keeping, priced like they should be.</h1>
+    <p class="lead">A small stall of well-made electronics, home goods, and everyday essentials — no markup theatrics, just what things actually cost.</p>
+  </div>
+  <div class="hero-tag">
+    <div class="num" id="hero-count">—</div>
+    <div class="label">items in stock</div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="filter-row" id="filter-row">
+    <button class="chip active" data-category="">All</button>
+  </div>
+
+  <div class="grid" id="product-grid">
+    <p class="center-note">Loading products…</p>
+  </div>
+</div>
+
+<footer>Fieldstall — a demo storefront built for learning. Not a real shop.</footer>
+
+<script src="/js/main.js"></script>
+<script src="/js/products.js"></script>
+</body>
+</html>

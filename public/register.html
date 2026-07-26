@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create account — Fieldstall</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="/index.html">Fieldstall<span class="dot">.</span></a>
+    <div></div>
+    <nav class="nav-links" id="auth-slot"></nav>
+    <a href="/cart.html" class="nav-cart">Cart <span class="count" id="cart-count" style="display:none">0</span></a>
+  </div>
+</header>
+
+<div class="auth-shell">
+  <h1>Create your account</h1>
+  <p class="sub">Takes about 20 seconds. No spam, ever.</p>
+  <div id="form-error" class="form-error"></div>
+  <form id="register-form">
+    <div class="field">
+      <label for="name">Full name</label>
+      <input id="name" name="name" required autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="email">
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required minlength="6" autocomplete="new-password">
+    </div>
+    <button class="btn btn-marigold btn-block" type="submit" id="submit-btn">Create account</button>
+  </form>
+  <div class="auth-switch">Already have an account? <a href="/login.html">Log in</a></div>
+</div>
+
+<script src="/js/main.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>

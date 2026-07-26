@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — Fieldstall</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="/index.html">Fieldstall<span class="dot">.</span></a>
+    <div></div>
+    <nav class="nav-links" id="auth-slot"></nav>
+    <a href="/cart.html" class="nav-cart">Cart <span class="count" id="cart-count" style="display:none">0</span></a>
+  </div>
+</header>
+
+<div class="auth-shell">
+  <h1>Welcome back</h1>
+  <p class="sub">Log in to view your cart and past orders.</p>
+  <div id="form-error" class="form-error"></div>
+  <form id="login-form">
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="email">
+    </div>
+    <div class="field">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" required autocomplete="current-password">
+    </div>
+    <button class="btn btn-marigold btn-block" type="submit" id="submit-btn">Log in</button>
+  </form>
+  <div class="auth-switch">New here? <a href="/register.html">Create an account</a></div>
+</div>
+
+<script src="/js/main.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your cart — Fieldstall</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="/index.html">Fieldstall<span class="dot">.</span></a>
+    <div class="search-box"><input type="text" placeholder="Search products…" onclick="window.location.href='/index.html'"></div>
+    <nav class="nav-links" id="auth-slot"></nav>
+    <a href="/cart.html" class="nav-cart">Cart <span class="count" id="cart-count" style="display:none">0</span></a>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-title"><h1>Your cart</h1></div>
+  <div id="cart-root">
+    <p class="center-note">Loading cart…</p>
+  </div>
+</div>
+
+<footer>Fieldstall — a demo storefront built for learning. Not a real shop.</footer>
+
+<script src="/js/main.js"></script>
+<script src="/js/cart.js"></script>
+</body>
+</html>
